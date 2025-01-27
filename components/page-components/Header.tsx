@@ -19,42 +19,15 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md transition-colors duration-300">
-      <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-3xl font-bold text-blue-600 dark:text-blue-400">
-            forwardfoc.us
-          </Link>
-          <div className="hidden md:flex space-x-6">
-            <Link
-              href="#features"
-              className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              Features
-            </Link>
-            <Link
-              href="#products"
-              className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              Products
-            </Link>
-            <Link
-              href="#pricing"
-              className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              Pricing
-            </Link>
+    <header className="py-6 bg-white dark:bg-gray-900">
+      <div className="container mx-auto px-6 max-w-4xl">
+        <div className="flex items-center space-x-2">
+          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+            <div className="w-4 h-4 bg-white rounded-full"></div>
           </div>
-          <div className="flex items-center space-x-4">
-            <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} variant="ghost" size="icon">
-              {theme === "dark" ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-            <Button size="lg">Get Started</Button>
-          </div>
+          <span className="text-xl font-bold text-gray-900 dark:text-white">Forward Focus</span>
         </div>
-      </nav>
+      </div>
     </header>
   )
 }
-

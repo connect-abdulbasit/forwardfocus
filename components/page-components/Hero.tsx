@@ -2,25 +2,39 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 text-center bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
-      <div className="container mx-auto px-6">
-        <h1 className="text-7xl font-extrabold mb-6 text-gray-900 dark:text-white leading-tight">
-          Empower Your Business with <span className="text-blue-600 dark:text-blue-400">AI</span> and Expert Outsourcing
+    <section className="py-16 bg-white dark:bg-gray-900">
+      <div className="container mx-auto px-6 max-w-4xl">
+        <div className="mb-3 text-orange-500 font-medium">Fully booked until March 15th, 2024</div>
+        <h1 className="text-4xl font-bold mb-3 text-gray-900 dark:text-white">
+          Ship new AI features
+          <br />
+          with the speed of light.
         </h1>
-        <p className="text-2xl mb-12 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          forwardfoc.us brings cutting-edge AI solutions and professional outsourcing services to streamline your
-          workflow and boost productivity.
+        <p className="text-lg mb-6 text-gray-600 dark:text-gray-300">
+          We're a boutique software development agency specializing in AI integration, B2B, SaaS, and early stage
+          startups.
         </p>
-        <div className="flex justify-center space-x-6">
-          <Button size="lg" className="text-xl py-6 px-8">
-            Book a Call
-          </Button>
-          <Button size="lg" variant="outline" className="text-xl py-6 px-8">
-            Don't trust what we say - trust our clients.
-          </Button>
+        <div className="grid grid-cols-3 gap-6 mt-12">
+          <div>
+            <h3 className="font-medium mb-1.5">Velocity</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
+              Our no-nonsense approach means less talk, more action, and faster time-to-market.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-medium mb-1.5">Holistic</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
+              We build powerful, user-friendly AI solutions that look as good as they perform.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-medium mb-1.5">Expertise</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
+              Work directly with seasoned engineers that understand what's at stake.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   )
 }
-
