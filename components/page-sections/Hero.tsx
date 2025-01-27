@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="py-16 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6 max-w-4xl">
-        <div className="mb-3 text-orange-500 font-medium">Fully booked until March 15th, 2024</div>
+        <div className="mb-3 text-orange-500 font-medium">Fully booked until March 15th, 2025</div>
         <h1 className="text-4xl font-bold mb-3 text-gray-900 dark:text-white">
           Ship new AI features
           <br />

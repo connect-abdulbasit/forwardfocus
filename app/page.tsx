@@ -1,11 +1,11 @@
-import Header from "../components/page-components/Header"
-import Hero from "../components/page-components/Hero"
-import Services from "../components/page-components/Features"
-import Process from "../components/page-components/Process"
-import FAQ from "../components/page-components/FAQ"
-import Pricing from "../components/page-components/Pricing"
-import Footer from "../components/page-components/Footer"
-import SEO from "../components/page-components/SEO"
+import Header from "../components/page-sections/Header"
+import Hero from "../components/page-sections/Hero"
+import Services from "../components/page-sections/Services"
+import Process from "../components/page-sections/Process"
+import FAQ from "../components/page-sections/FAQ"
+import Pricing from "../components/page-sections/Pricing"
+import Footer from "../components/page-sections/Footer"
+import SEO from "../components/SEO"
 
 export default function Home() {
   return (
