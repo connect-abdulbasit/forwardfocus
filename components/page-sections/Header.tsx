@@ -1,6 +1,7 @@
 "use client"
 
 import { useTheme } from "next-themes"
+import Image from "next/image"
 import { useEffect, useState } from "react"
 
 export default function Header() {
@@ -19,10 +20,11 @@ export default function Header() {
     <header className="py-6 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+          <Image src="/WorkDone Logo.png" alt="logo" width={150} height={32} />
+          {/* <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
             <div className="w-4 h-4 bg-white rounded-full"></div>
           </div>
-          <span className="text-xl font-bold text-gray-900 dark:text-white">Forward Focus</span>
+          <span className="text-xl font-bold text-gray-900 dark:text-white">Forward Focus</span> */}
         </div>
       </div>
     </header>
