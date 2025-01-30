@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="pt-24">
+    <section className="pt-8 md:pt-24">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="flex flex-col items-start w-full space-y-8">
           <div className="relative w-full">
@@ -13,7 +13,7 @@ const Hero = () => {
               alt="logo"
               width={35}
               height={35}
-              className="absolute top-0 left-[-50px]"
+              className="md:absolute mb-7  md:top-0 md:left-[-50px]"
             />
             {/* Description Text */}
             <p className="text-[#616161] text-[2.3em] font-semibold leading-tight w-full">

@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="py-8 bg-black text-white border-t border-gray-800">
+    <footer className="py-8 bg-black text-white border-t border-[#202020]">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="flex items-center justify-between text-sm text-gray-400">
           <div>© 2024 Forward Focus B.V. All rights reserved.</div>

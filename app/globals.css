@@ -5,7 +5,7 @@
 @layer base {
   body {
     @apply transition-colors duration-300;
-    @apply bg-[#111111];
+    @apply bg-[#000000];
   }
 }
 
