@@ -1,3 +1,4 @@
+import { MoonIcon, SunDimIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -5,8 +6,8 @@ const Hero = () => {
   return (
     <section className="pt-24">
       <div className="container mx-auto px-6 max-w-4xl">
-        <div className="flex flex-col items-start space-y-8">
-          <div className="relative">
+        <div className="flex flex-col items-start w-full space-y-8">
+          <div className="relative w-full">
             <Image
               src="/LogoIconWhite.png"
               alt="logo"
@@ -15,8 +16,8 @@ const Hero = () => {
               className="absolute top-0 left-[-50px]"
             />
             {/* Description Text */}
-            <p className="text-gray-500 text-3xl font-semibold leading-tight max-w-3xl">
-              <span className="text-white">Work Done</span> is a software
+            <p className="text-[#616161] text-[2.3em] font-semibold leading-tight w-full">
+              <span className="text-[#FBFBFB]">Work Done</span> is a software
               company that helps other companies and development teams outsource
               tasks so that they can focus on fast development and getting
               things done. Ship new features with the speed of light.
@@ -35,10 +36,16 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Taught By Section */}
-            <div>
+            {/* founder By Section */}
+            <div className="flex items-start gap-5">
+              <div className="w-full sm:w-auto">
+                <button className="bg-gray-900 text-gray-300 rounded-full p-[9px] transition duration-200 hover:bg-gray-800">
+                  <SunDimIcon />
+                  {/* <MoonIcon /> */}
+                </button>
+              </div>
               <a
-                className="flex justify-center items-center cursor-pointer space-x-2"
+                className="flex items-center cursor-pointer space-x-2"
                 href="https://www.linkedin.com/in/n-huzaifa/"
                 target="_blank"
                 rel="noopener noreferrer"
