@@ -2,12 +2,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function FAQ() {
   return (
-    <section className="py-12 bg-white dark:bg-gray-900">
+    <section className="py-12 bg-black text-white">
       <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-2xl font-bold mb-4">Frequently asked questions</h2>
-        <div className="text-sm text-gray-600 dark:text-gray-400 mb-6">
+        <div className="text-sm text-gray-400 mb-6">
           Can't find your answer?{" "}
-          <a href="#" className="text-blue-600 underline">
+          <a href="#" className="text-blue-400 underline">
             Drop us a line
           </a>
         </div>
@@ -56,3 +56,4 @@ export default function FAQ() {
     </section>
   )
 }
+

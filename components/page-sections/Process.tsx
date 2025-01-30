@@ -1,9 +1,9 @@
 export default function Process() {
   return (
-    <section className="py-12 bg-white dark:bg-gray-900">
+    <section className="py-12">
       <div className="container mx-auto px-6 max-w-4xl">
-        <h2 className="text-2xl font-bold mb-4">Our process</h2>
-        <div className="space-y-4 text-gray-600 dark:text-gray-400">
+        <h2 className="text-2xl font-bold mb-4 text-gray-100">Our process</h2>
+        <div className="space-y-4 text-gray-400">
           <p>After purchase you are invited to Discord, where you can connect with our team in real-time.</p>
           <p>We start shipping as soon as the requirements have been discussed and approved.</p>
           <p>To ensure a short feedback loop we release fast and often.</p>
@@ -20,3 +20,4 @@ export default function Process() {
     </section>
   )
 }
+
