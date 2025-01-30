@@ -11,7 +11,7 @@ const features = [
 
 export default function Services() {
   return (
-    <section className="py-28">
+    <section className="pt-28">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="grid grid-cols-1 bg-[#141414] md:grid-cols-2">
           {/* Services */}
