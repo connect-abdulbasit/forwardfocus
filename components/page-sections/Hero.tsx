@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="w-full flex flex-col justify-between sm:flex-row pt-4">
             {/* Button */}
             <div className="w-full sm:w-auto mb-4 sm:mb-0">
-              <button className="w-full sm:w-48 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg transition duration-200">
+              <button className="w-full sm:w-48 bg-gray-100 rounded hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 transition duration-200">
                 I'm Interested!
               </button>
               <p className="text-sm text-gray-500 mt-2">
