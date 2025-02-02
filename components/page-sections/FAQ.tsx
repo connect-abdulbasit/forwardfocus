@@ -40,12 +40,14 @@ const FaqList = [
 
 export default function FAQ() {
   return (
-    <section className="pt-20 pb-16 bg-black text-white">
+    <section className="pt-20 pb-16 dark:bg-black bg-white dark:text-white text-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-6 max-w-4xl">
-        <h2 className="text-2xl font-bold mb-4">Frequently asked questions</h2>
-        <div className="text-sm text-gray-400 mb-6">
+        <h2 className="text-2xl font-bold mb-4 dark:text-white text-gray-900">
+          Frequently asked questions
+        </h2>
+        <div className="text-sm dark:text-gray-400 text-gray-600 mb-6">
           Can't find your answer?{" "}
-          <a href="#" className="text-blue-400 underline">
+          <a href="#" className="dark:text-blue-400 text-blue-600 underline hover:opacity-80">
             Drop us a line
           </a>
         </div>
@@ -56,9 +58,15 @@ export default function FAQ() {
           className="space-y-4"
         >
           {FaqList.map((item) => (
-            <AccordionItem value={item.value}>
-              <AccordionTrigger className="text-[#e4e4e4]">{item.question}</AccordionTrigger>
-              <AccordionContent className="text-[#828282]">
+            <AccordionItem 
+              key={item.value} 
+              value={item.value}
+              className="dark:border-gray-800 border-gray-200"
+            >
+              <AccordionTrigger className="dark:text-[#e4e4e4] text-gray-800 hover:no-underline">
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className="dark:text-[#828282] text-gray-600">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

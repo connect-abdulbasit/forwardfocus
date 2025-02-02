@@ -13,7 +13,7 @@ export default function Home() {
         description="Ship new AI features with the speed of light. We're a boutique software development agency specializing in AI integration for B2B and SaaS companies."
         canonical="https://forwardfoc.us"
       />
-      <main className="min-h-screen bg-black">
+      <main className="min-h-screen bg-white dark:bg-black">
         <Hero />
         <Services />
         <Pricing />

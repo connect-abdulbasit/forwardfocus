@@ -1,7 +1,6 @@
 import { CheckCircle } from "lucide-react";
 
 const features = [
-  "Low cost MVPs",
   "UX/UI that users love",
   "Performing frontends",
   "Design systems that scale",
@@ -11,28 +10,30 @@ const features = [
 
 export default function Services() {
   return (
-    <section className="pt-28">
+    <section className="pt-28 transition-colors duration-300">
       <div className="container mx-auto px-6 max-w-4xl">
-        <div className="grid grid-cols-1 bg-[#141414] md:grid-cols-2">
+        <div className="grid grid-cols-1 dark:bg-[#141414] bg-gray-100 md:grid-cols-2">
           {/* Services */}
-          <div className="p-8 border-b md:border-r border-[#1c1c1c]">
-            <h2 className="text-2xl font-bold text-gray-100 mb-4">Services</h2>
-            <p className="text-gray-400 mb-6">
+          <div className="p-8 border-b md:border-r dark:border-[#1c1c1c] border-gray-200">
+            <h2 className="text-2xl font-bold dark:text-gray-100 text-gray-900 mb-4">
+              Services
+            </h2>
+            <p className="dark:text-gray-400 text-gray-600 mb-6">
               We bring decades of experience to your project. No learning curve,
               just results.
             </p>
             <ul className="space-y-3">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-gray-500" />
-                  <span className="text-gray-300">{feature}</span>
+                  <CheckCircle className="w-4 h-4 dark:text-gray-500 text-gray-400" />
+                  <span className="dark:text-gray-300 text-gray-700">{feature}</span>
                 </li>
               ))}
             </ul>
             <div className="mt-6">
-              <p className="text-gray-400">
+              <p className="dark:text-gray-400 text-gray-600">
                 Need a team that just gets it?{" "}
-                <a href="#contact" className="text-blue-500 underline">
+                <a href="#contact" className="text-blue-500 hover:text-blue-600 underline transition-colors">
                   Let's talk
                 </a>
               </p>
@@ -41,10 +42,10 @@ export default function Services() {
 
           {/* Process */}
           <div className="p-8">
-            <h2 className="text-2xl font-bold mb-4 text-gray-100">
+            <h2 className="text-2xl font-bold mb-4 dark:text-gray-100 text-gray-900">
               Our process
             </h2>
-            <div className="space-y-4 text-sm text-gray-400">
+            <div className="space-y-4 text-sm dark:text-gray-400 text-gray-600">
               <p>
                 After purchase you are invited to Discord, where you can connect
                 with our team in real-time.
