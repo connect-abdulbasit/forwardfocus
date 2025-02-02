@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Pricing() {
   return (
-    <section className="pt-16 transition-colors duration-300">
+    <section id="pricing" className="pt-16 transition-colors duration-300">
       <div className="container p-8 mx-auto max-w-4xl">
         <h2 className="dark:text-white text-gray-900 text-2xl font-bold mb-4">Pricing</h2>
         <div className="space-y-6">
