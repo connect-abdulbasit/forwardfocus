@@ -1,23 +1,32 @@
+'use client'
 import { MoonIcon, SunDimIcon } from "lucide-react";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
 
+
 const Hero = () => {
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
-    <section className="pt-8 md:pt-24">
+    <section className="pt-8 md:pt-24 transition-colors duration-300">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="flex flex-col items-start w-full space-y-8">
           <div className="relative w-full">
             <Image
-              src="/LogoIconWhite.png"
+              src={theme === 'light' ? "/LogoIconBlack.png" : "/LogoIconWhite.png"}
               alt="logo"
               width={35}
               height={35}
               className="md:absolute mb-7  md:top-0 md:left-[-50px]"
             />
             {/* Description Text */}
-            <p className="text-[#616161] text-[2.3em] font-semibold leading-tight w-full">
-              <span className="text-[#FBFBFB]">Work Done</span> is a software
+            <p className="dark:text-[#616161] text-gray-400 text-[2.3em] font-semibold leading-tight w-full">
+              <span className="dark:text-[#FBFBFB] text-gray-900">Work Done</span> is a software
               company that helps other companies and development teams outsource
               tasks so that they can focus on fast development and getting
               things done. Ship new features with the speed of light.
@@ -28,20 +37,22 @@ const Hero = () => {
           <div className="w-full flex flex-col justify-between sm:flex-row pt-4">
             {/* Button */}
             <div className="w-full sm:w-auto mb-4 sm:mb-0">
-              <button className="w-full sm:w-48 bg-gray-100 rounded hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 transition duration-200">
+              <button className="w-full sm:w-48 dark:bg-gray-100 bg-gray-900 dark:text-gray-800 text-white rounded hover:opacity-90 font-bold py-3 px-6 transition duration-200">
                 I'm Interested!
               </button>
-              <p className="text-sm text-gray-500 mt-2">
+              <p className="text-sm dark:text-gray-500 text-gray-600 mt-2">
                 Start shipping your product!
               </p>
             </div>
 
-            {/* founder By Section */}
+            {/* Theme Toggle */}
             <div className="flex items-start gap-5">
               <div className="w-full sm:w-auto">
-                <button className="bg-gray-900 text-gray-300 rounded-full p-[9px] transition duration-200 hover:bg-gray-800">
-                  <SunDimIcon />
-                  {/* <MoonIcon /> */}
+                <button 
+                  onClick={toggleTheme} 
+                  className="dark:bg-gray-900 bg-gray-100 dark:text-gray-300 text-gray-800 rounded-full p-[9px] transition duration-200 hover:opacity-80"
+                >
+                  {theme === "light" ? <MoonIcon size={24} /> : <SunDimIcon size={24} />}
                 </button>
               </div>
               <a
@@ -58,7 +69,7 @@ const Hero = () => {
                   src={"/Founder.png"}
                 />
                 <span className="text-gray-500">
-                  Founder: <span className="font-bold text-gray-300">Noor</span>
+                  Founder: <span className="font-bold text-gray-600">Noor</span>
                 </span>
               </a>
             </div>
