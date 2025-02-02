@@ -1,10 +1,15 @@
 import { MoonIcon, SunDimIcon } from "lucide-react";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Hero = ({theme, toggleTheme}: {theme: string | undefined, toggleTheme: () => void}) => {
   
-
+  const handleScrollToPricing = () => {
+    const pricingSection = document.getElementById("pricing");
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="pt-8 md:pt-24 transition-colors duration-300">
       <div className="container mx-auto px-6 max-w-4xl">
@@ -30,7 +35,9 @@ const Hero = ({theme, toggleTheme}: {theme: string | undefined, toggleTheme: () 
           <div className="w-full flex flex-col justify-between sm:flex-row pt-4">
             {/* Button */}
             <div className="w-full sm:w-auto mb-4 sm:mb-0">
-              <button className="w-full sm:w-48 dark:bg-gray-100 bg-gray-900 dark:text-gray-800 text-white rounded hover:opacity-90 font-bold py-3 px-6 transition duration-200">
+              <button 
+              onClick={handleScrollToPricing}
+              className="w-full sm:w-48 dark:bg-gray-100 bg-gray-900 dark:text-gray-800 text-white rounded hover:opacity-90 font-bold py-3 px-6 transition duration-200">
                 I'm Interested!
               </button>
               <p className="text-sm dark:text-gray-500 text-gray-600 mt-2">
