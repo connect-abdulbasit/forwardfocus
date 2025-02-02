@@ -1,16 +1,9 @@
-'use client'
 import { MoonIcon, SunDimIcon } from "lucide-react";
-import { useTheme } from "next-themes";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-
-const Hero = () => {
-  const { theme, setTheme } = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+const Hero = ({theme, toggleTheme}: {theme: string | undefined, toggleTheme: () => void}) => {
+  
 
   return (
     <section className="pt-8 md:pt-24 transition-colors duration-300">
